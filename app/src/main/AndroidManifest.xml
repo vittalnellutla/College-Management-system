@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.example.vittal.sfcms">
+
+
+
+    <application android:allowBackup="true" android:icon="@drawable/logo" android:label="SFCMS" android:supportsRtl="true" android:theme="@style/AppTheme">
+
+    <meta-data android:name="com.google.android.gms.version"/>
+
+    <!-- error loading mem track module - overload in AVD-->
+
+
+    <activity android:label="SFCMS" android:name="com.example.vittal.sfcms.MainActivity">
+
+
+    <intent-filter>
+
+    <action android:name="android.intent.action.MAIN"/>
+
+    <category android:name="android.intent.category.LAUNCHER"/>
+
+    </intent-filter>
+
+</activity>
+
+    <activity android:name=".activities.AdminLoginActivity"/>
+
+    <activity android:name=".activities.FacultyLoginActivity"/>
+
+    <activity android:name=".activities.StudentLoginActivity"/>
+
+    <activity android:name=".activities.FacultyRegisterActivity"/>
+
+    <activity android:name=".activities.StudentRegisterActivity"/>
+
+    <activity android:name=".activities.AdminRegisterActivity"/>
+
+    <activity android:name=".AppBase_Admin"/>
+
+    <activity android:name=".AppBase_Faculty"/>
+
+    <activity android:name=".AppBase_Student" android:exported="true"/>
+
+    <!-- error: app must contain an intent/must be exported -->
+
+
+    <activity android:name="com.example.vittal.sfcms.About"/>
+
+    <!--android:parentActivityName="com.example.vittal.sfcms.AppBase_Faculty"/-->
+
+
+    <activity android:name="com.example.vittal.sfcms.AttendanceActivity_Faculty" android:parentActivityName="com.example.vittal.sfcms.AppBase_Faculty"/>
+    <activity android:name=".AttendanceActivity_Admin"/>
+
+
+    <activity android:name=".DetailsEntryActivity"/>
+
+    <activity android:name=".EditStudent_Admin" android:parentActivityName=".ProfileActivity_Admin"/>
+
+    <activity android:name=".EditStudent_Faculty" android:parentActivityName=".ProfileActivity_Faculty"/>
+
+    <activity android:name="com.example.vittal.sfcms.Scheduler" android:parentActivityName="com.example.vittal.sfcms.AppBase_Faculty"/>
+
+    <activity android:name="com.example.vittal.sfcms.CreateScheduleActivity" android:parentActivityName="com.example.vittal.sfcms.Scheduler"/>
+
+    <activity android:name="com.example.vittal.sfcms.NoteActivity_Faculty" android:parentActivityName="com.example.vittal.sfcms.AppBase_Faculty"/>
+
+    <activity android:name=".NoteActivity_Admin"/>
+
+    <activity android:name=".NoteActivity_Student"/>
+
+    <activity android:name=".NoteCreateActivity_Admin"/>
+
+    <activity android:name="com.example.vittal.sfcms.NoteCreateActivity_Faculty"/>
+
+    <!-- android:parentActivityName="com.example.vittal.sfcms.NoteActivity_Faculty"/-->
+
+
+    <activity android:name=".NoticeActivity_Admin"/>
+
+    <activity android:name=".NoticeCreateActivity"/>
+
+    <activity android:name=".NoticeActivity_Faculty"/>
+
+    <activity android:name=".NoticeActivity_Student"/>
+
+    <activity android:name=".AttendanceMarksActivity"/>
+
+    <activity android:name=".ProfileActivity_Admin"/>
+
+    <activity android:name="com.example.vittal.sfcms.ProfileActivity_Faculty"/>
+
+    <!--android:parentActivityName="com.example.vittal.sfcms.AppBase_Faculty"/-->
+
+
+    <activity android:name=".ResultActivity"/>
+
+    <activity android:name="com.example.vittal.sfcms.SettingsActivity"/>
+
+    <!--android:parentActivityName="com.example.vittal.sfcms.AppBase_Faculty"/-->
+
+
+    <activity android:name=".WelcomeActivity"/>
+
+</application>
+
+</manifest>
+

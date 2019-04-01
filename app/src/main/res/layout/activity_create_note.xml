@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoteCreateActivity_Faculty">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:hint="Title Here"
+        android:textColorHint="#424242"
+        android:id="@+id/noteTitle" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:layout_below="@id/noteTitle"
+        android:gravity="top|left"
+        android:hint="Body here"
+        android:textColorHint="#424242"
+        android:layout_marginBottom="50dp"
+        android:id="@+id/noteBody" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textColor="#000000"
+        android:background="@color/colorAccent"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:id="@+id/noteSaveButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_alignBottom="@+id/noteBody"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:id="@+id/linearLayout">
+
+    <EditText
+        android:id="@+id/subjectNote"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Subject Name"
+        android:textColorHint="#424242" />
+</LinearLayout>
+
+    <Spinner
+        android:id="@+id/pinSpinner"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignEnd="@+id/linearLayout"
+        android:layout_alignRight="@+id/linearLayout" />
+</RelativeLayout>
+
