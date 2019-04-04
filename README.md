@@ -3,8 +3,11 @@ Student friendly college management system is a android web application;
 
 This android app has 3 modules :
 1) Faculty
+
 2) Student
+
 3) Admin
+
 Intially faculty and student has to register themselves into SFCMS .
 Then log in.
 Faculty duties:
